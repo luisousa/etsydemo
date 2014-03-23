@@ -11,6 +11,16 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem "paperclip", "~> 4.1"
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+end
+
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -33,6 +43,8 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
