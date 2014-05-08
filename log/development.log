@@ -26542,3 +26542,739 @@ Processing by ListingsController#index as HTML
   Rendered layouts/_header.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 25ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-05-08 22:31:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (1.0ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (8.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered listings/index.html.erb within layouts/application (104.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 369ms (Views: 310.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:24 +0100
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:33 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:41 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:42 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:44 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (1.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 27.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:45 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (1.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:47 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:47 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:48 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (1.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:51 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:31:51 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 5[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/seller.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mdwXxGDjLQ4tgg1GD3pf9ySU9cV7rBgofgi/nK8yzhs="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 5 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:54 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:31:55 +0100
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-05-08 22:32:00 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-05-08 22:32:55 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x2lFeQYW9L8n3t+uWQJOUcKi7x3idHgB8W+AVgT1Y5E=", "user"=>{"email"=>"ze@ze.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'ze@ze.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 6  [["current_sign_in_at", Thu, 08 May 2014 21:32:55 UTC +00:00], ["sign_in_count", 2], ["updated_at", Thu, 08 May 2014 21:32:55 UTC +00:00]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 133ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:32:55 +0100
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered listings/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:32:56 +0100
+
+
+Started GET "/listings/new" for 127.0.0.1 at 2014-05-08 22:33:00 +0100
+Processing by ListingsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered listings/_form.html.erb (11.0ms)
+  Rendered listings/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/listings" for 127.0.0.1 at 2014-05-08 22:33:18 +0100
+Processing by ListingsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qf4LBOvDCOufS71DHCzcy0mblmOtcTIKh/E/wd9N6s0=", "listing"=>{"name"=>"Joz", "description"=>"PRae rar ar\r\na\r\na", "price"=>"3.8", "image"=>#<ActionDispatch::Http::UploadedFile:0x5572098 @tempfile=#<File:C:/Users/ADMINI~1/AppData/Local/Temp/RackMultipart20140508-1116-1bxhhh4>, @original_filename="aid.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"listing[image]\"; filename=\"aid.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Listing"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg[0]"
+Command :: convert "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg" -coalesce -auto-orient -resize "200" -layers "optimize" "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-184qv9a"
+Command :: file -b --mime "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-184qv9a"
+[paperclip] Error while determining content type: No such file or directory - file -b --mime "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-184qv9a"
+Command :: identify -format '%wx%h,%[exif:orientation]' "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg[0]" 2>NUL
+Command :: identify -format %m "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg[0]"
+Command :: convert "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg" -coalesce -auto-orient -resize "100x100>" -layers "optimize" "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-1u8jj94"
+Command :: file -b --mime "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-1u8jj94"
+[paperclip] Error while determining content type: No such file or directory - file -b --mime "C:/Users/ADMINI~1/AppData/Local/Temp/1fcb0ce11599acc5531bb97656a364a020140508-1116-18cncgg20140508-1116-1u8jj94"
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `image_content_type`
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "listings" ("created_at", "description", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "name", "price", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 08 May 2014 21:33:31 UTC +00:00], ["description", "PRae rar ar\r\na\r\na"], ["image_content_type", "image/jpeg"], ["image_file_name", "aid.jpg"], ["image_file_size", 4310], ["image_updated_at", Thu, 08 May 2014 21:33:18 UTC +00:00], ["name", "Joz"], ["price", #<BigDecimal:3facc38,'0.38E1',18(18)>], ["updated_at", Thu, 08 May 2014 21:33:31 UTC +00:00], ["user_id", 6]]
+  [1m[36m (60.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/listings/9
+Completed 302 Found in 13423ms (ActiveRecord: 65.0ms)
+
+
+Started GET "/listings/9" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+Processing by ListingsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mListing Load (1.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered listings/show.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 58ms (Views: 51.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:32 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:33 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:33 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:33:33 +0100
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-05-08 22:33:42 +0100
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (1.0ms)[0m  [1mSELECT "listings".* FROM "listings"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (19.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:33:45 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 6
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered listings/seller.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:33:49 +0100
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered listings/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:35:51 +0100
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (36.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 67ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:35:52 +0100
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:35:55 +0100
+Processing by ListingsController#seller as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 6 ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  Rendered listings/seller.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:35:56 +0100
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  Rendered listings/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+Processing by ListingsController#index as HTML
+  [1m[36mListing Load (0.0ms)[0m  [1mSELECT "listings".* FROM "listings" ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1
+  Rendered listings/index.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/listings.css?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/listings.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-08 22:37:16 +0100
+
+
+Started GET "/seller" for 127.0.0.1 at 2014-05-08 22:37:19 +0100
+Processing by ListingsController#seller as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" WHERE "listings"."user_id" = 6 ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  Rendered listings/seller.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-08 22:37:21 +0100
+Processing by ListingsController#index as HTML
+  [1m[35mListing Load (0.0ms)[0m  SELECT "listings".* FROM "listings" ORDER BY created_at DESC
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 6 ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered listings/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms)
