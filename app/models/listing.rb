@@ -16,4 +16,9 @@ class Listing < ActiveRecord::Base
 	validates_attachment_presence :image
 
 	belongs_to :user
+	has_many :orders
+
+  belongs_to :buyer, class_name: "User"
+  belongs_to :seller, class_name: "User"
+
 end
