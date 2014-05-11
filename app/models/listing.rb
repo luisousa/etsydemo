@@ -18,7 +18,6 @@ class Listing < ActiveRecord::Base
 	belongs_to :user
 	has_many :orders
 
-  belongs_to :buyer, class_name: "User"
-  belongs_to :seller, class_name: "User"
+  
 
 end
